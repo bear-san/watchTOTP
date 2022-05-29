@@ -127,6 +127,7 @@
 		960EC2B128433AD4003BC8AA /* watchTOTP WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "watchTOTP WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		960EC2B528433AD4003BC8AA /* watchTOTP_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchTOTP_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
 		960EC2B728433AD4003BC8AA /* watchTOTP_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchTOTP_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		960EC2D228433D98003BC8AA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +179,7 @@
 		960EC25528433ACD003BC8AA = {
 			isa = PBXGroup;
 			children = (
+				960EC2D228433D98003BC8AA /* README.md */,
 				960EC26028433ACD003BC8AA /* watchTOTP */,
 				960EC27128433AD1003BC8AA /* watchTOTPTests */,
 				960EC27B28433AD1003BC8AA /* watchTOTPUITests */,

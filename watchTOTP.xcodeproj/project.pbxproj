@@ -1,0 +1,1163 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		960EC26228433ACD003BC8AA /* watchTOTPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC26128433ACD003BC8AA /* watchTOTPApp.swift */; };
+		960EC26428433ACD003BC8AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC26328433ACD003BC8AA /* ContentView.swift */; };
+		960EC26628433AD1003BC8AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960EC26528433AD1003BC8AA /* Assets.xcassets */; };
+		960EC26928433AD1003BC8AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960EC26828433AD1003BC8AA /* Preview Assets.xcassets */; };
+		960EC27328433AD1003BC8AA /* watchTOTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC27228433AD1003BC8AA /* watchTOTPTests.swift */; };
+		960EC27D28433AD1003BC8AA /* watchTOTPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC27C28433AD1003BC8AA /* watchTOTPUITests.swift */; };
+		960EC27F28433AD1003BC8AA /* watchTOTPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC27E28433AD1003BC8AA /* watchTOTPUITestsLaunchTests.swift */; };
+		960EC28328433AD1003BC8AA /* watchTOTP WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 960EC28228433AD1003BC8AA /* watchTOTP WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		960EC28828433AD2003BC8AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960EC28728433AD2003BC8AA /* Assets.xcassets */; };
+		960EC28E28433AD3003BC8AA /* watchTOTP WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 960EC28D28433AD3003BC8AA /* watchTOTP WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		960EC29328433AD3003BC8AA /* watchTOTPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC29228433AD3003BC8AA /* watchTOTPApp.swift */; };
+		960EC29528433AD3003BC8AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC29428433AD3003BC8AA /* ContentView.swift */; };
+		960EC29728433AD3003BC8AA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC29628433AD3003BC8AA /* NotificationController.swift */; };
+		960EC29928433AD3003BC8AA /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC29828433AD3003BC8AA /* NotificationView.swift */; };
+		960EC29B28433AD3003BC8AA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC29A28433AD3003BC8AA /* ComplicationController.swift */; };
+		960EC29D28433AD4003BC8AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960EC29C28433AD4003BC8AA /* Assets.xcassets */; };
+		960EC2A028433AD4003BC8AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960EC29F28433AD4003BC8AA /* Preview Assets.xcassets */; };
+		960EC2AC28433AD4003BC8AA /* watchTOTP_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC2AB28433AD4003BC8AA /* watchTOTP_WatchKit_AppTests.swift */; };
+		960EC2B628433AD4003BC8AA /* watchTOTP_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC2B528433AD4003BC8AA /* watchTOTP_WatchKit_AppUITests.swift */; };
+		960EC2B828433AD4003BC8AA /* watchTOTP_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC2B728433AD4003BC8AA /* watchTOTP_WatchKit_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		960EC26F28433AD1003BC8AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 960EC25628433ACD003BC8AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 960EC25D28433ACD003BC8AA;
+			remoteInfo = watchTOTP;
+		};
+		960EC27928433AD1003BC8AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 960EC25628433ACD003BC8AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 960EC25D28433ACD003BC8AA;
+			remoteInfo = watchTOTP;
+		};
+		960EC28428433AD1003BC8AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 960EC25628433ACD003BC8AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 960EC28128433AD1003BC8AA;
+			remoteInfo = "watchTOTP WatchKit App";
+		};
+		960EC28F28433AD3003BC8AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 960EC25628433ACD003BC8AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 960EC28C28433AD3003BC8AA;
+			remoteInfo = "watchTOTP WatchKit Extension";
+		};
+		960EC2A828433AD4003BC8AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 960EC25628433ACD003BC8AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 960EC28C28433AD3003BC8AA;
+			remoteInfo = "watchTOTP WatchKit Extension";
+		};
+		960EC2B228433AD4003BC8AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 960EC25628433ACD003BC8AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 960EC28128433AD1003BC8AA;
+			remoteInfo = "watchTOTP WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		960EC2BE28433AD4003BC8AA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				960EC28E28433AD3003BC8AA /* watchTOTP WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC2C228433AD4003BC8AA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				960EC28328433AD1003BC8AA /* watchTOTP WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		960EC25E28433ACD003BC8AA /* watchTOTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchTOTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		960EC26128433ACD003BC8AA /* watchTOTPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchTOTPApp.swift; sourceTree = "<group>"; };
+		960EC26328433ACD003BC8AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		960EC26528433AD1003BC8AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		960EC26828433AD1003BC8AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		960EC26E28433AD1003BC8AA /* watchTOTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = watchTOTPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		960EC27228433AD1003BC8AA /* watchTOTPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchTOTPTests.swift; sourceTree = "<group>"; };
+		960EC27828433AD1003BC8AA /* watchTOTPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = watchTOTPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		960EC27C28433AD1003BC8AA /* watchTOTPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchTOTPUITests.swift; sourceTree = "<group>"; };
+		960EC27E28433AD1003BC8AA /* watchTOTPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchTOTPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		960EC28228433AD1003BC8AA /* watchTOTP WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchTOTP WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		960EC28728433AD2003BC8AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		960EC28D28433AD3003BC8AA /* watchTOTP WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchTOTP WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		960EC29228433AD3003BC8AA /* watchTOTPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchTOTPApp.swift; sourceTree = "<group>"; };
+		960EC29428433AD3003BC8AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		960EC29628433AD3003BC8AA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		960EC29828433AD3003BC8AA /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		960EC29A28433AD3003BC8AA /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		960EC29C28433AD4003BC8AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		960EC29F28433AD4003BC8AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		960EC2A128433AD4003BC8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		960EC2A228433AD4003BC8AA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		960EC2A728433AD4003BC8AA /* watchTOTP WatchKit AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "watchTOTP WatchKit AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		960EC2AB28433AD4003BC8AA /* watchTOTP_WatchKit_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchTOTP_WatchKit_AppTests.swift; sourceTree = "<group>"; };
+		960EC2B128433AD4003BC8AA /* watchTOTP WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "watchTOTP WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		960EC2B528433AD4003BC8AA /* watchTOTP_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchTOTP_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
+		960EC2B728433AD4003BC8AA /* watchTOTP_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchTOTP_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		960EC25B28433ACD003BC8AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC26B28433AD1003BC8AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC27528433AD1003BC8AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC28A28433AD3003BC8AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC2A428433AD4003BC8AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC2AE28433AD4003BC8AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		960EC25528433ACD003BC8AA = {
+			isa = PBXGroup;
+			children = (
+				960EC26028433ACD003BC8AA /* watchTOTP */,
+				960EC27128433AD1003BC8AA /* watchTOTPTests */,
+				960EC27B28433AD1003BC8AA /* watchTOTPUITests */,
+				960EC28628433AD1003BC8AA /* watchTOTP WatchKit App */,
+				960EC29128433AD3003BC8AA /* watchTOTP WatchKit Extension */,
+				960EC2AA28433AD4003BC8AA /* watchTOTP WatchKit AppTests */,
+				960EC2B428433AD4003BC8AA /* watchTOTP WatchKit AppUITests */,
+				960EC25F28433ACD003BC8AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		960EC25F28433ACD003BC8AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				960EC25E28433ACD003BC8AA /* watchTOTP.app */,
+				960EC26E28433AD1003BC8AA /* watchTOTPTests.xctest */,
+				960EC27828433AD1003BC8AA /* watchTOTPUITests.xctest */,
+				960EC28228433AD1003BC8AA /* watchTOTP WatchKit App.app */,
+				960EC28D28433AD3003BC8AA /* watchTOTP WatchKit Extension.appex */,
+				960EC2A728433AD4003BC8AA /* watchTOTP WatchKit AppTests.xctest */,
+				960EC2B128433AD4003BC8AA /* watchTOTP WatchKit AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		960EC26028433ACD003BC8AA /* watchTOTP */ = {
+			isa = PBXGroup;
+			children = (
+				960EC26128433ACD003BC8AA /* watchTOTPApp.swift */,
+				960EC26328433ACD003BC8AA /* ContentView.swift */,
+				960EC26528433AD1003BC8AA /* Assets.xcassets */,
+				960EC26728433AD1003BC8AA /* Preview Content */,
+			);
+			path = watchTOTP;
+			sourceTree = "<group>";
+		};
+		960EC26728433AD1003BC8AA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				960EC26828433AD1003BC8AA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		960EC27128433AD1003BC8AA /* watchTOTPTests */ = {
+			isa = PBXGroup;
+			children = (
+				960EC27228433AD1003BC8AA /* watchTOTPTests.swift */,
+			);
+			path = watchTOTPTests;
+			sourceTree = "<group>";
+		};
+		960EC27B28433AD1003BC8AA /* watchTOTPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				960EC27C28433AD1003BC8AA /* watchTOTPUITests.swift */,
+				960EC27E28433AD1003BC8AA /* watchTOTPUITestsLaunchTests.swift */,
+			);
+			path = watchTOTPUITests;
+			sourceTree = "<group>";
+		};
+		960EC28628433AD1003BC8AA /* watchTOTP WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				960EC28728433AD2003BC8AA /* Assets.xcassets */,
+			);
+			path = "watchTOTP WatchKit App";
+			sourceTree = "<group>";
+		};
+		960EC29128433AD3003BC8AA /* watchTOTP WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				960EC29228433AD3003BC8AA /* watchTOTPApp.swift */,
+				960EC29428433AD3003BC8AA /* ContentView.swift */,
+				960EC29628433AD3003BC8AA /* NotificationController.swift */,
+				960EC29828433AD3003BC8AA /* NotificationView.swift */,
+				960EC29A28433AD3003BC8AA /* ComplicationController.swift */,
+				960EC29C28433AD4003BC8AA /* Assets.xcassets */,
+				960EC2A128433AD4003BC8AA /* Info.plist */,
+				960EC2A228433AD4003BC8AA /* PushNotificationPayload.apns */,
+				960EC29E28433AD4003BC8AA /* Preview Content */,
+			);
+			path = "watchTOTP WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		960EC29E28433AD4003BC8AA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				960EC29F28433AD4003BC8AA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		960EC2AA28433AD4003BC8AA /* watchTOTP WatchKit AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				960EC2AB28433AD4003BC8AA /* watchTOTP_WatchKit_AppTests.swift */,
+			);
+			path = "watchTOTP WatchKit AppTests";
+			sourceTree = "<group>";
+		};
+		960EC2B428433AD4003BC8AA /* watchTOTP WatchKit AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				960EC2B528433AD4003BC8AA /* watchTOTP_WatchKit_AppUITests.swift */,
+				960EC2B728433AD4003BC8AA /* watchTOTP_WatchKit_AppUITestsLaunchTests.swift */,
+			);
+			path = "watchTOTP WatchKit AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		960EC25D28433ACD003BC8AA /* watchTOTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960EC2C328433AD4003BC8AA /* Build configuration list for PBXNativeTarget "watchTOTP" */;
+			buildPhases = (
+				960EC25A28433ACD003BC8AA /* Sources */,
+				960EC25B28433ACD003BC8AA /* Frameworks */,
+				960EC25C28433ACD003BC8AA /* Resources */,
+				960EC2C228433AD4003BC8AA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				960EC28528433AD1003BC8AA /* PBXTargetDependency */,
+			);
+			name = watchTOTP;
+			productName = watchTOTP;
+			productReference = 960EC25E28433ACD003BC8AA /* watchTOTP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		960EC26D28433AD1003BC8AA /* watchTOTPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960EC2C628433AD4003BC8AA /* Build configuration list for PBXNativeTarget "watchTOTPTests" */;
+			buildPhases = (
+				960EC26A28433AD1003BC8AA /* Sources */,
+				960EC26B28433AD1003BC8AA /* Frameworks */,
+				960EC26C28433AD1003BC8AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				960EC27028433AD1003BC8AA /* PBXTargetDependency */,
+			);
+			name = watchTOTPTests;
+			productName = watchTOTPTests;
+			productReference = 960EC26E28433AD1003BC8AA /* watchTOTPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		960EC27728433AD1003BC8AA /* watchTOTPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960EC2C928433AD4003BC8AA /* Build configuration list for PBXNativeTarget "watchTOTPUITests" */;
+			buildPhases = (
+				960EC27428433AD1003BC8AA /* Sources */,
+				960EC27528433AD1003BC8AA /* Frameworks */,
+				960EC27628433AD1003BC8AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				960EC27A28433AD1003BC8AA /* PBXTargetDependency */,
+			);
+			name = watchTOTPUITests;
+			productName = watchTOTPUITests;
+			productReference = 960EC27828433AD1003BC8AA /* watchTOTPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		960EC28128433AD1003BC8AA /* watchTOTP WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960EC2BF28433AD4003BC8AA /* Build configuration list for PBXNativeTarget "watchTOTP WatchKit App" */;
+			buildPhases = (
+				960EC28028433AD1003BC8AA /* Resources */,
+				960EC2BE28433AD4003BC8AA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				960EC29028433AD3003BC8AA /* PBXTargetDependency */,
+			);
+			name = "watchTOTP WatchKit App";
+			productName = "watchTOTP WatchKit App";
+			productReference = 960EC28228433AD1003BC8AA /* watchTOTP WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		960EC28C28433AD3003BC8AA /* watchTOTP WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960EC2BB28433AD4003BC8AA /* Build configuration list for PBXNativeTarget "watchTOTP WatchKit Extension" */;
+			buildPhases = (
+				960EC28928433AD3003BC8AA /* Sources */,
+				960EC28A28433AD3003BC8AA /* Frameworks */,
+				960EC28B28433AD3003BC8AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watchTOTP WatchKit Extension";
+			productName = "watchTOTP WatchKit Extension";
+			productReference = 960EC28D28433AD3003BC8AA /* watchTOTP WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		960EC2A628433AD4003BC8AA /* watchTOTP WatchKit AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960EC2CC28433AD4003BC8AA /* Build configuration list for PBXNativeTarget "watchTOTP WatchKit AppTests" */;
+			buildPhases = (
+				960EC2A328433AD4003BC8AA /* Sources */,
+				960EC2A428433AD4003BC8AA /* Frameworks */,
+				960EC2A528433AD4003BC8AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				960EC2A928433AD4003BC8AA /* PBXTargetDependency */,
+			);
+			name = "watchTOTP WatchKit AppTests";
+			productName = "watchTOTP WatchKit AppTests";
+			productReference = 960EC2A728433AD4003BC8AA /* watchTOTP WatchKit AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		960EC2B028433AD4003BC8AA /* watchTOTP WatchKit AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960EC2CF28433AD4003BC8AA /* Build configuration list for PBXNativeTarget "watchTOTP WatchKit AppUITests" */;
+			buildPhases = (
+				960EC2AD28433AD4003BC8AA /* Sources */,
+				960EC2AE28433AD4003BC8AA /* Frameworks */,
+				960EC2AF28433AD4003BC8AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				960EC2B328433AD4003BC8AA /* PBXTargetDependency */,
+			);
+			name = "watchTOTP WatchKit AppUITests";
+			productName = "watchTOTP WatchKit AppUITests";
+			productReference = 960EC2B128433AD4003BC8AA /* watchTOTP WatchKit AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		960EC25628433ACD003BC8AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					960EC25D28433ACD003BC8AA = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					960EC26D28433AD1003BC8AA = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 960EC25D28433ACD003BC8AA;
+					};
+					960EC27728433AD1003BC8AA = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 960EC25D28433ACD003BC8AA;
+					};
+					960EC28128433AD1003BC8AA = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					960EC28C28433AD3003BC8AA = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					960EC2A628433AD4003BC8AA = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 960EC28C28433AD3003BC8AA;
+					};
+					960EC2B028433AD4003BC8AA = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 960EC28128433AD1003BC8AA;
+					};
+				};
+			};
+			buildConfigurationList = 960EC25928433ACD003BC8AA /* Build configuration list for PBXProject "watchTOTP" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 960EC25528433ACD003BC8AA;
+			productRefGroup = 960EC25F28433ACD003BC8AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				960EC25D28433ACD003BC8AA /* watchTOTP */,
+				960EC26D28433AD1003BC8AA /* watchTOTPTests */,
+				960EC27728433AD1003BC8AA /* watchTOTPUITests */,
+				960EC28128433AD1003BC8AA /* watchTOTP WatchKit App */,
+				960EC28C28433AD3003BC8AA /* watchTOTP WatchKit Extension */,
+				960EC2A628433AD4003BC8AA /* watchTOTP WatchKit AppTests */,
+				960EC2B028433AD4003BC8AA /* watchTOTP WatchKit AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		960EC25C28433ACD003BC8AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960EC26928433AD1003BC8AA /* Preview Assets.xcassets in Resources */,
+				960EC26628433AD1003BC8AA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC26C28433AD1003BC8AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC27628433AD1003BC8AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC28028433AD1003BC8AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960EC28828433AD2003BC8AA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC28B28433AD3003BC8AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960EC2A028433AD4003BC8AA /* Preview Assets.xcassets in Resources */,
+				960EC29D28433AD4003BC8AA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC2A528433AD4003BC8AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC2AF28433AD4003BC8AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		960EC25A28433ACD003BC8AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960EC26428433ACD003BC8AA /* ContentView.swift in Sources */,
+				960EC26228433ACD003BC8AA /* watchTOTPApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC26A28433AD1003BC8AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960EC27328433AD1003BC8AA /* watchTOTPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC27428433AD1003BC8AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960EC27D28433AD1003BC8AA /* watchTOTPUITests.swift in Sources */,
+				960EC27F28433AD1003BC8AA /* watchTOTPUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC28928433AD3003BC8AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960EC29728433AD3003BC8AA /* NotificationController.swift in Sources */,
+				960EC29528433AD3003BC8AA /* ContentView.swift in Sources */,
+				960EC29B28433AD3003BC8AA /* ComplicationController.swift in Sources */,
+				960EC29328433AD3003BC8AA /* watchTOTPApp.swift in Sources */,
+				960EC29928433AD3003BC8AA /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC2A328433AD4003BC8AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960EC2AC28433AD4003BC8AA /* watchTOTP_WatchKit_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960EC2AD28433AD4003BC8AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960EC2B828433AD4003BC8AA /* watchTOTP_WatchKit_AppUITestsLaunchTests.swift in Sources */,
+				960EC2B628433AD4003BC8AA /* watchTOTP_WatchKit_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		960EC27028433AD1003BC8AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 960EC25D28433ACD003BC8AA /* watchTOTP */;
+			targetProxy = 960EC26F28433AD1003BC8AA /* PBXContainerItemProxy */;
+		};
+		960EC27A28433AD1003BC8AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 960EC25D28433ACD003BC8AA /* watchTOTP */;
+			targetProxy = 960EC27928433AD1003BC8AA /* PBXContainerItemProxy */;
+		};
+		960EC28528433AD1003BC8AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 960EC28128433AD1003BC8AA /* watchTOTP WatchKit App */;
+			targetProxy = 960EC28428433AD1003BC8AA /* PBXContainerItemProxy */;
+		};
+		960EC29028433AD3003BC8AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 960EC28C28433AD3003BC8AA /* watchTOTP WatchKit Extension */;
+			targetProxy = 960EC28F28433AD3003BC8AA /* PBXContainerItemProxy */;
+		};
+		960EC2A928433AD4003BC8AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 960EC28C28433AD3003BC8AA /* watchTOTP WatchKit Extension */;
+			targetProxy = 960EC2A828433AD4003BC8AA /* PBXContainerItemProxy */;
+		};
+		960EC2B328433AD4003BC8AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 960EC28128433AD1003BC8AA /* watchTOTP WatchKit App */;
+			targetProxy = 960EC2B228433AD4003BC8AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		960EC2B928433AD4003BC8AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		960EC2BA28433AD4003BC8AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		960EC2BC28433AD4003BC8AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watchTOTP WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "watchTOTP WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "watchTOTP WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.beah.app.watchTOTP.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		960EC2BD28433AD4003BC8AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watchTOTP WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "watchTOTP WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "watchTOTP WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.beah.app.watchTOTP.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		960EC2C028433AD4003BC8AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = watchTOTP_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "watchTOTP WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = jp.ne.beah.app.watchTOTP;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.beah.app.watchTOTP.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		960EC2C128433AD4003BC8AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = watchTOTP_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "watchTOTP WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = jp.ne.beah.app.watchTOTP;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.beah.app.watchTOTP.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		960EC2C428433AD4003BC8AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watchTOTP/Preview Content\"";
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.beah.app.watchTOTP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		960EC2C528433AD4003BC8AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watchTOTP/Preview Content\"";
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.beah.app.watchTOTP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		960EC2C728433AD4003BC8AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.beah.app.watchTOTPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/watchTOTP.app/watchTOTP";
+			};
+			name = Debug;
+		};
+		960EC2C828433AD4003BC8AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.beah.app.watchTOTPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/watchTOTP.app/watchTOTP";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		960EC2CA28433AD4003BC8AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.beah.app.watchTOTPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = watchTOTP;
+			};
+			name = Debug;
+		};
+		960EC2CB28433AD4003BC8AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.beah.app.watchTOTPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = watchTOTP;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		960EC2CD28433AD4003BC8AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ne.beah.app.watchTOTP-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/watchTOTP WatchKit Extension.appex/watchTOTP WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		960EC2CE28433AD4003BC8AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ne.beah.app.watchTOTP-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/watchTOTP WatchKit Extension.appex/watchTOTP WatchKit Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		960EC2D028433AD4003BC8AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ne.beah.app.watchTOTP-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "watchTOTP WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		960EC2D128433AD4003BC8AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ne.beah.app.watchTOTP-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "watchTOTP WatchKit App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		960EC25928433ACD003BC8AA /* Build configuration list for PBXProject "watchTOTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960EC2B928433AD4003BC8AA /* Debug */,
+				960EC2BA28433AD4003BC8AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960EC2BB28433AD4003BC8AA /* Build configuration list for PBXNativeTarget "watchTOTP WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960EC2BC28433AD4003BC8AA /* Debug */,
+				960EC2BD28433AD4003BC8AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960EC2BF28433AD4003BC8AA /* Build configuration list for PBXNativeTarget "watchTOTP WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960EC2C028433AD4003BC8AA /* Debug */,
+				960EC2C128433AD4003BC8AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960EC2C328433AD4003BC8AA /* Build configuration list for PBXNativeTarget "watchTOTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960EC2C428433AD4003BC8AA /* Debug */,
+				960EC2C528433AD4003BC8AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960EC2C628433AD4003BC8AA /* Build configuration list for PBXNativeTarget "watchTOTPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960EC2C728433AD4003BC8AA /* Debug */,
+				960EC2C828433AD4003BC8AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960EC2C928433AD4003BC8AA /* Build configuration list for PBXNativeTarget "watchTOTPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960EC2CA28433AD4003BC8AA /* Debug */,
+				960EC2CB28433AD4003BC8AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960EC2CC28433AD4003BC8AA /* Build configuration list for PBXNativeTarget "watchTOTP WatchKit AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960EC2CD28433AD4003BC8AA /* Debug */,
+				960EC2CE28433AD4003BC8AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960EC2CF28433AD4003BC8AA /* Build configuration list for PBXNativeTarget "watchTOTP WatchKit AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960EC2D028433AD4003BC8AA /* Debug */,
+				960EC2D128433AD4003BC8AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 960EC25628433ACD003BC8AA /* Project object */;
+}

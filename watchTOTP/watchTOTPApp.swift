@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct watchTOTPApp: App {
+    @ObservedObject var controller = TOTPController()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

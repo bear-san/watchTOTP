@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var controller = TOTPController()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ForEach(controller.credentials){ c in
+            OTPView(token: c)
+        }
     }
 }
 

@@ -35,7 +35,8 @@
 		967F9F1A28783ED4002F677C /* SwiftOTP in Frameworks */ = {isa = PBXBuildFile; productRef = 967F9F1928783ED4002F677C /* SwiftOTP */; };
 		967F9F1C287842E4002F677C /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F9F1B287842E4002F677C /* OTPView.swift */; };
 		967F9F1E28787C17002F677C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967F9F1D28787C17002F677C /* Colors.xcassets */; };
-		967F9F202878F2F5002F677C /* CredentialAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F9F1F2878F2F5002F677C /* CredentialAddView.swift */; };
+		96E78C7428AAAAC9006097EF /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E78C7328AAAAC9006097EF /* QRCodeReaderView.swift */; };
+		96E78C7628AB4231006097EF /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E78C7528AB4231006097EF /* QRScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,7 +143,8 @@
 		960EC2E3284342DD003BC8AA /* watchTOTP WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "watchTOTP WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		967F9F1B287842E4002F677C /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		967F9F1D28787C17002F677C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		967F9F1F2878F2F5002F677C /* CredentialAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialAddView.swift; sourceTree = "<group>"; };
+		96E78C7328AAAAC9006097EF /* QRCodeReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
+		96E78C7528AB4231006097EF /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,10 +234,11 @@
 				960EC2D628434185003BC8AA /* watchTOTPApp.swift */,
 				960EC26328433ACD003BC8AA /* ContentView.swift */,
 				967F9F1B287842E4002F677C /* OTPView.swift */,
-				967F9F1F2878F2F5002F677C /* CredentialAddView.swift */,
 				960EC26528433AD1003BC8AA /* Assets.xcassets */,
 				960EC26728433AD1003BC8AA /* Preview Content */,
 				967F9F1D28787C17002F677C /* Colors.xcassets */,
+				96E78C7328AAAAC9006097EF /* QRCodeReaderView.swift */,
+				96E78C7528AB4231006097EF /* QRScannerView.swift */,
 			);
 			path = watchTOTP;
 			sourceTree = "<group>";
@@ -585,8 +588,9 @@
 				960EC26428433ACD003BC8AA /* ContentView.swift in Sources */,
 				960EC2D728434185003BC8AA /* watchTOTPApp.swift in Sources */,
 				967F9F1C287842E4002F677C /* OTPView.swift in Sources */,
+				96E78C7428AAAAC9006097EF /* QRCodeReaderView.swift in Sources */,
+				96E78C7628AB4231006097EF /* QRScannerView.swift in Sources */,
 				960EC2D9284341A9003BC8AA /* TOTPController.swift in Sources */,
-				967F9F202878F2F5002F677C /* CredentialAddView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,6 +933,7 @@
 				DEVELOPMENT_TEAM = Z298ZPM27Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "QRコード読み取りのため";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -961,6 +966,7 @@
 				DEVELOPMENT_TEAM = Z298ZPM27Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "QRコード読み取りのため";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

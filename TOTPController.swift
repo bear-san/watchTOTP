@@ -13,9 +13,15 @@ class TOTPController: ObservableObject {
     @Published var credentials: [TOTPCredential] = []
     let keychain = Keychain.init(service: Bundle.main.bundleIdentifier ?? "")
     
+    @Published var readingQrCode = false
+    
     init() {
         credentials.append(TOTPCredential("HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ"))
         print(credentials[0].token)
+    }
+    
+    func addCredential(_ code: String) {
+        print(code)
     }
 }
 

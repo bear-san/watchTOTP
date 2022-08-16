@@ -28,7 +28,9 @@
 		960EC2B828433AD4003BC8AA /* watchTOTP_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC2B728433AD4003BC8AA /* watchTOTP_WatchKit_AppUITestsLaunchTests.swift */; };
 		960EC2D728434185003BC8AA /* watchTOTPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC2D628434185003BC8AA /* watchTOTPApp.swift */; };
 		960EC2D9284341A9003BC8AA /* TOTPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC2D8284341A9003BC8AA /* TOTPController.swift */; };
-		960EC2DB284341F7003BC8AA /* TOTPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC2D8284341A9003BC8AA /* TOTPController.swift */; };
+		9612D2F628ABB92600D6C71F /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F9F1B287842E4002F677C /* OTPView.swift */; };
+		9612D2F828ABC52400D6C71F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9612D2F728ABC52400D6C71F /* DataModel.swift */; };
+		9612D2F928ABC52400D6C71F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9612D2F728ABC52400D6C71F /* DataModel.swift */; };
 		967F9F1C287842E4002F677C /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F9F1B287842E4002F677C /* OTPView.swift */; };
 		967F9F1E28787C17002F677C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967F9F1D28787C17002F677C /* Colors.xcassets */; };
 		96E78C7428AAAAC9006097EF /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E78C7328AAAAC9006097EF /* QRCodeReaderView.swift */; };
@@ -155,6 +157,7 @@
 		960EC2D8284341A9003BC8AA /* TOTPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOTPController.swift; sourceTree = "<group>"; };
 		960EC2E2284342CF003BC8AA /* watchTOTP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = watchTOTP.entitlements; sourceTree = "<group>"; };
 		960EC2E3284342DD003BC8AA /* watchTOTP WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "watchTOTP WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		9612D2F728ABC52400D6C71F /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		967F9F1B287842E4002F677C /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		967F9F1D28787C17002F677C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		96E78C7328AAAAC9006097EF /* QRCodeReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
@@ -218,8 +221,8 @@
 		960EC25528433ACD003BC8AA = {
 			isa = PBXGroup;
 			children = (
+				9612D2F728ABC52400D6C71F /* DataModel.swift */,
 				960EC2D228433D98003BC8AA /* README.md */,
-				960EC2D8284341A9003BC8AA /* TOTPController.swift */,
 				960EC26028433ACD003BC8AA /* watchTOTP */,
 				960EC27128433AD1003BC8AA /* watchTOTPTests */,
 				960EC27B28433AD1003BC8AA /* watchTOTPUITests */,
@@ -250,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				960EC2E2284342CF003BC8AA /* watchTOTP.entitlements */,
+				960EC2D8284341A9003BC8AA /* TOTPController.swift */,
 				960EC2D628434185003BC8AA /* watchTOTPApp.swift */,
 				960EC26328433ACD003BC8AA /* ContentView.swift */,
 				967F9F1B287842E4002F677C /* OTPView.swift */,
@@ -617,6 +621,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9612D2F828ABC52400D6C71F /* DataModel.swift in Sources */,
 				960EC26428433ACD003BC8AA /* ContentView.swift in Sources */,
 				960EC2D728434185003BC8AA /* watchTOTPApp.swift in Sources */,
 				967F9F1C287842E4002F677C /* OTPView.swift in Sources */,
@@ -647,9 +652,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9612D2F928ABC52400D6C71F /* DataModel.swift in Sources */,
+				9612D2F628ABB92600D6C71F /* OTPView.swift in Sources */,
 				960EC29728433AD3003BC8AA /* NotificationController.swift in Sources */,
 				960EC29528433AD3003BC8AA /* ContentView.swift in Sources */,
-				960EC2DB284341F7003BC8AA /* TOTPController.swift in Sources */,
 				960EC29B28433AD3003BC8AA /* ComplicationController.swift in Sources */,
 				960EC29328433AD3003BC8AA /* watchTOTPApp.swift in Sources */,
 				960EC29928433AD3003BC8AA /* NotificationView.swift in Sources */,

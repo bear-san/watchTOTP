@@ -53,6 +53,11 @@ class TOTPCredential: Identifiable, ObservableObject{
     }
 }
 
+struct TOTPCredentialPayloadData {
+    var metadata: TOTPCredentialMetadata
+    var secret: String
+}
+
 enum WTError: LocalizedError{
     case notOtpAuthURI
     case invalidOtpAuthURI

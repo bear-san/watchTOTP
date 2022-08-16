@@ -9,6 +9,7 @@ import Foundation
 import KeychainAccess
 import SwiftOTP
 import RealmSwift
+import WatchConnectivity
 
 class TOTPController: ObservableObject {
     @Published var credentials: [TOTPCredential] = []
@@ -81,5 +82,32 @@ class TOTPController: ObservableObject {
         }
         
         self.credentials = newCredentials
+    }
+}
+
+class WatchConnector: NSObject, WCSessionDelegate{
+    let db = try! Realm()
+    let keychain = Keychain.init(service: Bundle.main.bundleIdentifier ?? "")
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        let payload: [TOTPCredentialPayloadData] = Array(db.objects(TOTPCredentialMetadata.self)).map { metadata in
+            let key = "\(Bundle.main.bundleIdentifier ?? "")_\(metadata.issuer):\(metadata.accountName)"
+            
+            return TOTPCredentialPayloadData(metadata: metadata, secret: keychain[key] ?? "")
+        }
+        
+        session.sendMessage(["payload": payload], replyHandler: nil)
+    }
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
     }
 }

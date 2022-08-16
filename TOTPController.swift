@@ -18,6 +18,7 @@ class TOTPController: ObservableObject {
     @Published var readingQrCode = false
     
     init() {
+        refresh()
     }
     
     func addCredential(_ code: String) throws {
@@ -65,6 +66,23 @@ class TOTPController: ObservableObject {
         keychain[key] = secret
         
         self.readingQrCode = false
+        self.refresh()
+    }
+    
+    func refresh() {
+        var newCredentials: [TOTPCredential] = []
+        let secrets = db.objects(TOTPSecret.self)
+        
+        secrets.forEach { s in
+            let key = "\(Bundle.main.bundleIdentifier ?? "")_\(s.issuer):\(s.accountName)"
+            let displayName = "\(s.issuer)(\(s.accountName))"
+            
+            newCredentials.append(.init(displayName: displayName,
+                                        secret: keychain[key] ?? "",
+                                        timeoutSec: s.period))
+        }
+        
+        self.credentials = newCredentials
     }
 }
 

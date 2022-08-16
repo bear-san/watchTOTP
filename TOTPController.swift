@@ -32,7 +32,7 @@ class TOTPController: ObservableObject {
         
         let lastPath = url.pathComponents.last ?? ""
         
-        let secretAttributes = TOTPSecret()
+        let secretAttributes = TOTPCredentialMetadata()
         secretAttributes.issuer = String(lastPath.split(separator: ":").first ?? "")
         secretAttributes.accountName = String(lastPath.split(separator: ":").last ?? "")
         
@@ -71,15 +71,13 @@ class TOTPController: ObservableObject {
     
     func refresh() {
         var newCredentials: [TOTPCredential] = []
-        let secrets = db.objects(TOTPSecret.self)
+        let secrets = db.objects(TOTPCredentialMetadata.self)
         
         secrets.forEach { s in
             let key = "\(Bundle.main.bundleIdentifier ?? "")_\(s.issuer):\(s.accountName)"
-            let displayName = "\(s.issuer)(\(s.accountName))"
             
-            newCredentials.append(.init(displayName: displayName,
-                                        secret: keychain[key] ?? "",
-                                        timeoutSec: s.period))
+            newCredentials.append(.init(secret: keychain[key] ?? "",
+                                        metadata: s))
         }
         
         self.credentials = newCredentials
@@ -97,9 +95,9 @@ class TOTPCredential: Identifiable, ObservableObject{
     @Published var token = ""
     @Published var remainCount = 0
     
-    init(displayName: String, secret: String, timeoutSec: Int) {
-        self.displayName = displayName
-        self.timeoutSec = timeoutSec
+    init(secret: String, metadata: TOTPCredentialMetadata) {
+        self.displayName = "\(metadata.issuer)(\(metadata.accountName))"
+        self.timeoutSec = metadata.period
         
         self.secret = secret
         self.generator = TOTP(secret: self.secret.base32DecodedData!,
@@ -143,7 +141,7 @@ enum WTError: LocalizedError{
     }
 }
 
-class TOTPSecret: Object{
+class TOTPCredentialMetadata: Object{
     @Persisted var issuer: String
     @Persisted var accountName: String
     @Persisted var algorithm: String

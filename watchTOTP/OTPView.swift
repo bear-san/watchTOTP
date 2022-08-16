@@ -28,12 +28,12 @@ struct OTPView: View {
 struct OTPView_Previews: PreviewProvider{
     static var previews: some View {
         Group {
-            OTPView(token: .init(displayName: "Test",
-                                 secret: "HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ",
-                                 timeoutSec: 60))
-            OTPView(token: .init(displayName: "Test",
-                                 secret: "HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ",
-                                 timeoutSec: 60))
+            let metadata = TOTPCredentialMetadata()
+            
+            OTPView(token: .init(secret: "HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ",
+                                 metadata: metadata))
+            OTPView(token: .init(secret: "HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ",
+                                 metadata: metadata))
             .preferredColorScheme(.dark)
         }
     }

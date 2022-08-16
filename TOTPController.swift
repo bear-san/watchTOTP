@@ -75,15 +75,18 @@ class TOTPCredential: Identifiable, ObservableObject{
     
     var timeoutSec = 30
     
-    @Published var accountName = ""
+    @Published var displayName = ""
     @Published var token = ""
     @Published var remainCount = 0
     
-    init(_ secret: String) {
+    init(displayName: String, secret: String, timeoutSec: Int) {
+        self.displayName = displayName
+        self.timeoutSec = timeoutSec
+        
         self.secret = secret
         self.generator = TOTP(secret: self.secret.base32DecodedData!,
                               digits: 6,
-                              timeInterval: timeoutSec,
+                              timeInterval: self.timeoutSec,
                               algorithm: .sha1)
         generateToken()
         
@@ -100,7 +103,7 @@ class TOTPCredential: Identifiable, ObservableObject{
     
     private func generateToken() {
         self.token = self.generator?.generate(time: Date()) ?? ""
-        self.remainCount = 30
+        self.remainCount = self.timeoutSec
     }
     
     deinit {

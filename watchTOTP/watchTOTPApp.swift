@@ -13,7 +13,7 @@ struct watchTOTPApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(controller: controller)
         }
     }
 }

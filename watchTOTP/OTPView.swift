@@ -13,6 +13,8 @@ struct OTPView: View {
         VStack(alignment: .leading){
             Text(token.token)
                 .font(.largeTitle)
+            Text(token.displayName)
+                .font(.subheadline)
             ProgressView(value: (Double(token.remainCount) / 30.0))
         }
         .padding()
@@ -26,9 +28,13 @@ struct OTPView: View {
 struct OTPView_Previews: PreviewProvider{
     static var previews: some View {
         Group {
-            OTPView(token: .init("HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ"))
-            OTPView(token: .init("HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ"))
-                .preferredColorScheme(.dark)
+            OTPView(token: .init(displayName: "Test",
+                                 secret: "HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ",
+                                 timeoutSec: 60))
+            OTPView(token: .init(displayName: "Test",
+                                 secret: "HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ",
+                                 timeoutSec: 60))
+            .preferredColorScheme(.dark)
         }
     }
 }

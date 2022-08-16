@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QRScannerView: UIViewRepresentable {
-    var didDetected: (String) -> Void
+    var didDetected: (String) throws -> Void
     var view = QRCodeReaderView()
     
     func makeUIView(context: Context) -> QRCodeReaderView {

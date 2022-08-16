@@ -8,24 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var controller = TOTPController()
+    @ObservedObject var controller: TOTPController
     var body: some View {
         NavigationView{
             VStack{
                 ForEach(controller.credentials){ c in
                     OTPView(token: c)
                 }
-                .toolbar{
-                    Button("hogehoge") {
-                        controller.readingQrCode = true
-                    }
+            }
+            .toolbar{
+                Button("hogehoge") {
+                    controller.readingQrCode = true
                 }
-                .sheet(isPresented: $controller.readingQrCode) {
-                    QRScannerView { result in
-                        controller.addCredential(result)
-                        controller.readingQrCode.toggle()
-                    }
-                }
+            }
+            .sheet(isPresented: $controller.readingQrCode) {
+                QRScannerView(didDetected: controller.addCredential)
             }
         }
     }
@@ -33,6 +30,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(controller: .init())
     }
 }

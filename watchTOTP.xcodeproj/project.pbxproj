@@ -29,14 +29,18 @@
 		960EC2D728434185003BC8AA /* watchTOTPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC2D628434185003BC8AA /* watchTOTPApp.swift */; };
 		960EC2D9284341A9003BC8AA /* TOTPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC2D8284341A9003BC8AA /* TOTPController.swift */; };
 		960EC2DB284341F7003BC8AA /* TOTPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC2D8284341A9003BC8AA /* TOTPController.swift */; };
-		960EC2DE2843425B003BC8AA /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 960EC2DD2843425B003BC8AA /* KeychainAccess */; };
-		960EC2E12843427A003BC8AA /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 960EC2E02843427A003BC8AA /* KeychainAccess */; };
-		967F9F1728783EB3002F677C /* SwiftOTP in Frameworks */ = {isa = PBXBuildFile; productRef = 967F9F1628783EB3002F677C /* SwiftOTP */; };
-		967F9F1A28783ED4002F677C /* SwiftOTP in Frameworks */ = {isa = PBXBuildFile; productRef = 967F9F1928783ED4002F677C /* SwiftOTP */; };
 		967F9F1C287842E4002F677C /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F9F1B287842E4002F677C /* OTPView.swift */; };
 		967F9F1E28787C17002F677C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967F9F1D28787C17002F677C /* Colors.xcassets */; };
 		96E78C7428AAAAC9006097EF /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E78C7328AAAAC9006097EF /* QRCodeReaderView.swift */; };
 		96E78C7628AB4231006097EF /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E78C7528AB4231006097EF /* QRScannerView.swift */; };
+		96E78C8128AB88EB006097EF /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 96E78C8028AB88EB006097EF /* Realm */; };
+		96E78C8328AB88EB006097EF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 96E78C8228AB88EB006097EF /* RealmSwift */; };
+		96E78C8628AB8912006097EF /* SwiftOTP in Frameworks */ = {isa = PBXBuildFile; productRef = 96E78C8528AB8912006097EF /* SwiftOTP */; };
+		96E78C8B28AB8926006097EF /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 96E78C8A28AB8926006097EF /* KeychainAccess */; };
+		96E78C8E28AB8939006097EF /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 96E78C8D28AB8939006097EF /* Realm */; };
+		96E78C9028AB8939006097EF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 96E78C8F28AB8939006097EF /* RealmSwift */; };
+		96E78C9228AB8939006097EF /* SwiftOTP in Frameworks */ = {isa = PBXBuildFile; productRef = 96E78C9128AB8939006097EF /* SwiftOTP */; };
+		96E78C9728AB8939006097EF /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 96E78C9628AB8939006097EF /* KeychainAccess */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +111,16 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		96E78C9828AB8939006097EF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -152,8 +166,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				967F9F1728783EB3002F677C /* SwiftOTP in Frameworks */,
-				960EC2DE2843425B003BC8AA /* KeychainAccess in Frameworks */,
+				96E78C8328AB88EB006097EF /* RealmSwift in Frameworks */,
+				96E78C8628AB8912006097EF /* SwiftOTP in Frameworks */,
+				96E78C8128AB88EB006097EF /* Realm in Frameworks */,
+				96E78C8B28AB8926006097EF /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,8 +191,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				967F9F1A28783ED4002F677C /* SwiftOTP in Frameworks */,
-				960EC2E12843427A003BC8AA /* KeychainAccess in Frameworks */,
+				96E78C9028AB8939006097EF /* RealmSwift in Frameworks */,
+				96E78C9228AB8939006097EF /* SwiftOTP in Frameworks */,
+				96E78C8E28AB8939006097EF /* Realm in Frameworks */,
+				96E78C9728AB8939006097EF /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +228,7 @@
 				960EC2AA28433AD4003BC8AA /* watchTOTP WatchKit AppTests */,
 				960EC2B428433AD4003BC8AA /* watchTOTP WatchKit AppUITests */,
 				960EC25F28433ACD003BC8AA /* Products */,
+				96E78C8C28AB8939006097EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -318,6 +337,13 @@
 			path = "watchTOTP WatchKit AppUITests";
 			sourceTree = "<group>";
 		};
+		96E78C8C28AB8939006097EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -337,8 +363,10 @@
 			);
 			name = watchTOTP;
 			packageProductDependencies = (
-				960EC2DD2843425B003BC8AA /* KeychainAccess */,
-				967F9F1628783EB3002F677C /* SwiftOTP */,
+				96E78C8028AB88EB006097EF /* Realm */,
+				96E78C8228AB88EB006097EF /* RealmSwift */,
+				96E78C8528AB8912006097EF /* SwiftOTP */,
+				96E78C8A28AB8926006097EF /* KeychainAccess */,
 			);
 			productName = watchTOTP;
 			productReference = 960EC25E28433ACD003BC8AA /* watchTOTP.app */;
@@ -393,6 +421,8 @@
 				960EC29028433AD3003BC8AA /* PBXTargetDependency */,
 			);
 			name = "watchTOTP WatchKit App";
+			packageProductDependencies = (
+			);
 			productName = "watchTOTP WatchKit App";
 			productReference = 960EC28228433AD1003BC8AA /* watchTOTP WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
@@ -404,6 +434,7 @@
 				960EC28928433AD3003BC8AA /* Sources */,
 				960EC28A28433AD3003BC8AA /* Frameworks */,
 				960EC28B28433AD3003BC8AA /* Resources */,
+				96E78C9828AB8939006097EF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -411,8 +442,10 @@
 			);
 			name = "watchTOTP WatchKit Extension";
 			packageProductDependencies = (
-				960EC2E02843427A003BC8AA /* KeychainAccess */,
-				967F9F1928783ED4002F677C /* SwiftOTP */,
+				96E78C8D28AB8939006097EF /* Realm */,
+				96E78C8F28AB8939006097EF /* RealmSwift */,
+				96E78C9128AB8939006097EF /* SwiftOTP */,
+				96E78C9628AB8939006097EF /* KeychainAccess */,
 			);
 			productName = "watchTOTP WatchKit Extension";
 			productReference = 960EC28D28433AD3003BC8AA /* watchTOTP WatchKit Extension.appex */;
@@ -502,10 +535,9 @@
 			);
 			mainGroup = 960EC25528433ACD003BC8AA;
 			packageReferences = (
-				960EC2DC2843425B003BC8AA /* XCRemoteSwiftPackageReference "KeychainAccess" */,
-				960EC2DF2843427A003BC8AA /* XCRemoteSwiftPackageReference "KeychainAccess" */,
-				967F9F1528783EB3002F677C /* XCRemoteSwiftPackageReference "SwiftOTP" */,
-				967F9F1828783ED4002F677C /* XCRemoteSwiftPackageReference "SwiftOTP" */,
+				96E78C7F28AB88EB006097EF /* XCRemoteSwiftPackageReference "realm-swift" */,
+				96E78C8428AB8911006097EF /* XCRemoteSwiftPackageReference "SwiftOTP" */,
+				96E78C8928AB8926006097EF /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 960EC25F28433ACD003BC8AA /* Products */;
 			projectDirPath = "";
@@ -1232,23 +1264,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		960EC2DC2843425B003BC8AA /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+		96E78C7F28AB88EB006097EF /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
 				branch = master;
 				kind = branch;
 			};
 		};
-		960EC2DF2843427A003BC8AA /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		967F9F1528783EB3002F677C /* XCRemoteSwiftPackageReference "SwiftOTP" */ = {
+		96E78C8428AB8911006097EF /* XCRemoteSwiftPackageReference "SwiftOTP" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lachlanbell/SwiftOTP.git";
 			requirement = {
@@ -1256,9 +1280,9 @@
 				kind = branch;
 			};
 		};
-		967F9F1828783ED4002F677C /* XCRemoteSwiftPackageReference "SwiftOTP" */ = {
+		96E78C8928AB8926006097EF /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/lachlanbell/SwiftOTP.git";
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -1267,25 +1291,45 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		960EC2DD2843425B003BC8AA /* KeychainAccess */ = {
+		96E78C8028AB88EB006097EF /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 960EC2DC2843425B003BC8AA /* XCRemoteSwiftPackageReference "KeychainAccess" */;
-			productName = KeychainAccess;
+			package = 96E78C7F28AB88EB006097EF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
 		};
-		960EC2E02843427A003BC8AA /* KeychainAccess */ = {
+		96E78C8228AB88EB006097EF /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 960EC2DC2843425B003BC8AA /* XCRemoteSwiftPackageReference "KeychainAccess" */;
-			productName = KeychainAccess;
+			package = 96E78C7F28AB88EB006097EF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
-		967F9F1628783EB3002F677C /* SwiftOTP */ = {
+		96E78C8528AB8912006097EF /* SwiftOTP */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 967F9F1528783EB3002F677C /* XCRemoteSwiftPackageReference "SwiftOTP" */;
+			package = 96E78C8428AB8911006097EF /* XCRemoteSwiftPackageReference "SwiftOTP" */;
 			productName = SwiftOTP;
 		};
-		967F9F1928783ED4002F677C /* SwiftOTP */ = {
+		96E78C8A28AB8926006097EF /* KeychainAccess */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 967F9F1828783ED4002F677C /* XCRemoteSwiftPackageReference "SwiftOTP" */;
+			package = 96E78C8928AB8926006097EF /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		96E78C8D28AB8939006097EF /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96E78C7F28AB88EB006097EF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		96E78C8F28AB8939006097EF /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96E78C7F28AB88EB006097EF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		96E78C9128AB8939006097EF /* SwiftOTP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96E78C8428AB8911006097EF /* XCRemoteSwiftPackageReference "SwiftOTP" */;
 			productName = SwiftOTP;
+		};
+		96E78C9628AB8939006097EF /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96E78C8928AB8926006097EF /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

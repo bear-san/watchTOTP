@@ -13,7 +13,7 @@ class QRCodeReaderView: UIView, AVCaptureMetadataOutputObjectsDelegate {
     
     var session: AVCaptureSession?
     
-    var didDetected: (String) -> Void = { _ in }
+    var didDetected: (String) throws -> Void = { _ in }
     
     init() {
         super.init(frame: .zero)
@@ -100,7 +100,12 @@ class QRCodeReaderView: UIView, AVCaptureMetadataOutputObjectsDelegate {
                 continue
             }
             
-            didDetected(value)
+            do{
+                try didDetected(value)
+            }catch{
+                continue
+            }
+            
             self.stopCapture()
         }
     }

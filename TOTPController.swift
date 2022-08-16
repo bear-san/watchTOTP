@@ -8,20 +8,63 @@
 import Foundation
 import KeychainAccess
 import SwiftOTP
+import RealmSwift
 
 class TOTPController: ObservableObject {
     @Published var credentials: [TOTPCredential] = []
     let keychain = Keychain.init(service: Bundle.main.bundleIdentifier ?? "")
+    private let db = try! Realm()
     
     @Published var readingQrCode = false
     
     init() {
-        credentials.append(TOTPCredential("HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ"))
-        print(credentials[0].token)
     }
     
-    func addCredential(_ code: String) {
-        print(code)
+    func addCredential(_ code: String) throws {
+        guard let url = URL(string: code) else{
+            throw WTError.notOtpAuthURI
+        }
+        
+        if url.scheme != "otpauth"{
+            throw WTError.notOtpAuthURI
+        }
+        
+        let lastPath = url.pathComponents.last ?? ""
+        
+        let secretAttributes = TOTPSecret()
+        secretAttributes.issuer = String(lastPath.split(separator: ":").first ?? "")
+        secretAttributes.accountName = String(lastPath.split(separator: ":").last ?? "")
+        
+        guard let urlComponents = URLComponents(string: code) else{
+            throw WTError.invalidOtpAuthURI
+        }
+        
+        secretAttributes.algorithm = urlComponents.queryItems?.first(where: { i in
+            return i.name == "algorithm"
+        })?.value ?? ""
+        
+        secretAttributes.digits = Int(urlComponents.queryItems?.first(where: { i in
+            return i.name == "digits"
+        })?.value ?? "0") ?? 0
+        
+        
+        secretAttributes.period = Int(urlComponents.queryItems?.first(where: { i in
+            return i.name == "period"
+        })?.value ?? "0") ?? 0
+        
+        try! db.write({
+            db.add(secretAttributes)
+        })
+        
+        
+        let secret = urlComponents.queryItems?.first(where: { i in
+            return i.name == "secret"
+        })?.value ?? ""
+        
+        let key = "\(Bundle.main.bundleIdentifier ?? "")_\(secretAttributes.issuer):\(secretAttributes.accountName)"
+        keychain[key] = secret
+        
+        self.readingQrCode = false
     }
 }
 
@@ -30,7 +73,7 @@ class TOTPCredential: Identifiable, ObservableObject{
     private var secret = ""
     private var generator: TOTP?
     
-    var timeoutSec = 0
+    var timeoutSec = 30
     
     @Published var accountName = ""
     @Published var token = ""
@@ -40,7 +83,7 @@ class TOTPCredential: Identifiable, ObservableObject{
         self.secret = secret
         self.generator = TOTP(secret: self.secret.base32DecodedData!,
                               digits: 6,
-                              timeInterval: 30,
+                              timeInterval: timeoutSec,
                               algorithm: .sha1)
         generateToken()
         
@@ -63,4 +106,26 @@ class TOTPCredential: Identifiable, ObservableObject{
     deinit {
         timer?.invalidate()
     }
+}
+
+enum WTError: LocalizedError{
+    case notOtpAuthURI
+    case invalidOtpAuthURI
+    
+    var errorDescription: String {
+        switch self {
+        case .notOtpAuthURI:
+            return ""
+        case .invalidOtpAuthURI:
+            return ""
+        }
+    }
+}
+
+class TOTPSecret: Object{
+    @Persisted var issuer: String
+    @Persisted var accountName: String
+    @Persisted var algorithm: String
+    @Persisted var digits: Int
+    @Persisted var period: Int
 }
